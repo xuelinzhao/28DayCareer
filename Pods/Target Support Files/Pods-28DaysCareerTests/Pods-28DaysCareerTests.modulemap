@@ -1,0 +1,6 @@
+framework module Pods_28DaysCareerTests {
+  umbrella header "Pods-28DaysCareerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
