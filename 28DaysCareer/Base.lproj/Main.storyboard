@@ -245,6 +245,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kCg-17-vaY" kind="showDetail" id="L8L-RI-7fg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Do you still have that feeling of passion inside of yourself similar to beginning your career?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-eT-tvg">
                                 <rect key="frame" x="42" y="236" width="291" height="107"/>
@@ -308,6 +311,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIn-GL-8Zz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2607.1999999999998" y="-120.08995502248877"/>
+        </scene>
+        <!--Wheel View Controller-->
+        <scene sceneID="kOg-Qd-DiN">
+            <objects>
+                <viewController id="kCg-17-vaY" customClass="WLBWheelViewController" customModule="_8DaysCareer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ukK-dx-i5g"/>
+                        <viewControllerLayoutGuide type="bottom" id="eAq-KE-Jye"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b6a-J1-RNj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-gb-DzU">
+                                <rect key="frame" x="0.0" y="507" width="375" height="160"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.32156862749999998" blue="0.0" alpha="0.87018407529999997" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="B3p-qn-kNb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56w-bR-lmn">
+                                <rect key="frame" x="0.0" y="20" width="375" height="159"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.32156862749999998" blue="0.0" alpha="0.87018407529999997" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="jV5-tR-Af3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-pI-DLE">
+                                <rect key="frame" x="29" y="118" width="318.5" height="39.5"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkX-IH-aUg">
+                                <rect key="frame" x="123" y="533" width="129" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jst-pI-DLE" firstAttribute="top" secondItem="ukK-dx-i5g" secondAttribute="bottom" constant="98" id="2yg-9w-qeF"/>
+                            <constraint firstItem="eAq-KE-Jye" firstAttribute="top" secondItem="IkX-IH-aUg" secondAttribute="bottom" constant="95" id="6lz-BN-gld"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IkX-IH-aUg" secondAttribute="trailing" constant="107" id="Aii-1v-2qE"/>
+                            <constraint firstItem="mGo-gb-DzU" firstAttribute="bottom" secondItem="eAq-KE-Jye" secondAttribute="top" id="N2D-h8-Uwj"/>
+                            <constraint firstItem="56w-bR-lmn" firstAttribute="top" secondItem="ukK-dx-i5g" secondAttribute="bottom" id="QPc-42-Pvl"/>
+                            <constraint firstItem="Jst-pI-DLE" firstAttribute="leading" secondItem="b6a-J1-RNj" secondAttribute="leadingMargin" constant="13" id="SY7-CA-kjT"/>
+                            <constraint firstAttribute="trailing" secondItem="56w-bR-lmn" secondAttribute="trailing" id="Syd-hU-ph1"/>
+                            <constraint firstItem="IkX-IH-aUg" firstAttribute="leading" secondItem="b6a-J1-RNj" secondAttribute="leadingMargin" constant="107" id="U6G-Lk-OTz"/>
+                            <constraint firstItem="56w-bR-lmn" firstAttribute="leading" secondItem="b6a-J1-RNj" secondAttribute="leading" id="Vx0-bl-ne4"/>
+                            <constraint firstItem="mGo-gb-DzU" firstAttribute="trailing" secondItem="56w-bR-lmn" secondAttribute="trailing" id="ayE-sr-H2i"/>
+                            <constraint firstItem="mGo-gb-DzU" firstAttribute="leading" secondItem="56w-bR-lmn" secondAttribute="leading" id="bnL-7C-SH6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jst-pI-DLE" secondAttribute="trailing" constant="11.5" id="tGQ-ZG-bDa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWA-f8-FYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3415" y="-119"/>
         </scene>
     </scenes>
 </document>

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.3'
 
 target '28DaysCareer' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -9,6 +9,7 @@ target '28DaysCareer' do
 
   target '28DaysCareerTests' do
     inherit! :search_paths
+    use_frameworks!
     pod 'TKRadarChart', '~> 1.3'
   end
 

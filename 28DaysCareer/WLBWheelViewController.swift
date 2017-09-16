@@ -1,21 +1,19 @@
 //
-//  WLBItemViewController.swift
+//  WLBWheelViewController.swift
 //  28DaysCareer
 //
 //  Created by Xuelin Zhao on 2017/9/16.
 //  Copyright © 2017年 zhaoxuelin. All rights reserved.
 //
 
+
 import UIKit
 
 
-class WLBItemViewController: UIViewController {
+class WLBWheelViewController: UIViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
